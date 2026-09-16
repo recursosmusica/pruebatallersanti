@@ -1,0 +1,206 @@
+/* Variables globales */
+:root {
+    --bg-color: #f4f6f8;
+    --card-bg: #ffffff;
+    --text-color: #2c3e50;
+    --primary-color: #1a5276;
+    --accent-color: #2980b9;
+    --border-color: #d6dbdf;
+    --bias-red: #fadbd8;
+    --bias-border: #e74c3c;
+    --correct-green: #d4efdf;
+    --correct-border: #27ae60;
+    --font-size: 16px;
+}
+
+/* Modo Alto Contraste */
+body.high-contrast {
+    --bg-color: #121212;
+    --card-bg: #1e1e1e;
+    --text-color: #ffffff;
+    --primary-color: #f39c12;
+    --accent-color: #f1c40f;
+    --border-color: #444444;
+    --bias-red: #4a1515;
+    --bias-border: #e74c3c;
+    --correct-green: #143d22;
+    --correct-border: #2ecc71;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-size: var(--font-size);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.badge {
+    background-color: var(--accent-color);
+    color: #ffffff;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.accessibility-bar {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    padding: 12px 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+}
+
+.accessibility-bar button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accessibility-bar button:hover {
+    opacity: 0.9;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+.dua-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.dua-card {
+    flex: 1 1 250px;
+    background: var(--bg-color);
+    padding: 15px;
+    border-radius: 6px;
+    border-left: 4px solid var(--accent-color);
+}
+
+.interactive-tool {
+    margin-top: 20px;
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    color: var(--text-color);
+}
+
+.code-box {
+    background-color: var(--bg-color);
+    border: 1px dashed var(--border-color);
+    padding: 12px;
+    font-family: monospace;
+    border-radius: 4px;
+    margin: 8px 0;
+}
+
+.output-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.output-card {
+    flex: 1 1 300px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+.output-card.biased {
+    background-color: var(--bias-red);
+    border-left: 5px solid var(--bias-border);
+}
+
+.output-card.corrected {
+    background-color: var(--correct-green);
+    border-left: 5px solid var(--correct-border);
+}
+
+.analysis-box {
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.expression-list {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.footer {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.5rem;
+    }
+}
