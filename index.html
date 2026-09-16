@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REA: Sesgos en la Inteligencia Artificial (Enfoque DUA)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <span class="badge">Recurso Educativo Abierto (REA) • DUA</span>
+            <h1>Detrás del Algoritmo: Auditoría Inclusiva de Sesgos en la IA</h1>
+            <p class="subtitle">Explora, analiza y corrige las respuestas de los modelos de inteligencia artificial desde una perspectiva crítica y diversa.</p>
+        </div>
+    </header>
+
+    <div class="accessibility-bar container">
+        <span><strong>Ajustes de accesibilidad:</strong></span>
+        <button id="toggle-contrast" aria-label="Cambiar a alto contraste">🌓 Alto Contraste</button>
+        <button id="increase-font" aria-label="Aumentar tamaño de texto">A+</button>
+        <button id="decrease-font" aria-label="Disminuir tamaño de texto">A-</button>
+        <button id="read-speech" aria-label="Escuchar resumen de la página">🔊 Escuchar Resumen</button>
+    </div>
+
+    <main class="container">
+        <!-- SECCIÓN 1: INTRODUCCIÓN Y PRINCIPIOS DUA -->
+        <section class="card">
+            <h2>1. Enfoque Pedagógico DUA</h2>
+            <p>Este recurso está diseñado bajo el Marco del <strong>Diseño Universal para el Aprendizaje (DUA)</strong> para garantizar la accesibilidad y el compromiso de todo el alumnado:</p>
+            <div class="dua-grid">
+                <div class="dua-card">
+                    <h3>👁️ Representación</h3>
+                    <p>Múltiples formatos: texto de lectura fácil, ejemplos visuales y síntesis por voz.</p>
+                </div>
+                <div class="dua-card">
+                    <h3>🛠️ Acción y Expresión</h3>
+                    <p>Opciones de respuesta flexibles: informe escrito, presentación oral o audio.</p>
+                </div>
+                <div class="dua-card">
+                    <h3>💡 Implicación</h3>
+                    <p>Casos prácticos de la vida real con niveles de reto graduables y personalizables.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: SIMULADOR DE AUDITORÍA -->
+        <section class="card">
+            <h2>2. Simulador Práctico: Laboratorio de Sesgos</h2>
+            <p>Selecciona un escenario de prueba para analizar cómo la IA puede generar respuestas con sesgos implícitos y aprende a corregirlos con <em>prompts</em> inclusivos.</p>
+
+            <div class="interactive-tool">
+                <label for="scenario-select"><strong>Selecciona un caso de estudio:</strong></label>
+                <select id="scenario-select">
+                    <option value="professions">Caso 1: Selección de Perfiles Profesionales</option>
+                    <option value="translation">Caso 2: Traducción Automatizada de Roles</option>
+                    <option value="images">Caso 3: Generación de Imágenes de Liderazgo</option>
+                </select>
+
+                <div class="simulation-box">
+                    <div class="prompt-section">
+                        <h4>Instrucción Original (Prompt Base):</h4>
+                        <div class="code-box" id="base-prompt">Cargando...</div>
+                    </div>
+
+                    <div class="output-grid">
+                        <div class="output-card biased">
+                            <h4>❌ Salida con Sesgo Identificado:</h4>
+                            <p id="biased-output">Cargando...</p>
+                            <div class="analysis-box">
+                                <strong>Análisis Crítico:</strong>
+                                <p id="bias-analysis">Cargando...</p>
+                            </div>
+                        </div>
+
+                        <div class="output-card corrected">
+                            <h4>✅ Prompt Correctivo (Inclusivo):</h4>
+                            <div class="code-box" id="corrected-prompt">Cargando...</div>
+                            <h4 style="margin-top: 15px;">Salida Auditada:</h4>
+                            <p id="corrected-output">Cargando...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: GUÍA DE EVALUACIÓN Y EXPRESIÓN -->
+        <section class="card">
+            <h2>3. Matriz de Entrega (Opción Múltiple de Expresión)</h2>
+            <p>Elige la forma en que deseas presentar tu auditoría final de sesgos de acuerdo a tus preferencias de aprendizaje:</p>
+            <ul class="expression-list">
+                <li><strong>Opción A (Formato Escrito):</strong> Elabora una plantilla de auditoría analizando 3 salidas de una IA.</li>
+                <li><strong>Opción B (Formato Audio/Pódcast):</strong> Graba una conversación de 3 minutos explicando los sesgos encontrados.</li>
+                <li><strong>Opción C (Formato Visual):</strong> Diseña una infografía comparativa con el 'Antes y Después' de un prompt.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Recurso Educativo Abierto (REA) bajo Licencia <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" style="color: white; text-decoration: underline;">CC BY-SA 4.0</a></p>
+            <p>Diseñado para ser desplegado directamente en GitHub Pages, GitLab Pages o Vercel.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
